@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bf test</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blox Fruits Trading Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blox Fruits Trading Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trading-section">Trade</a></li>
+        <li><a href="#public-trades">Public Trades</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to the Blox Fruits Trading Hub</h2>
+      <p>Connect with other players and trade your favorite fruits easily!</p>
+      <p id="welcome-message"></p>
+    </section>
+
+    <!-- Roblox Username Section -->
+    <section id="username-section">
+      <h2>Enter Your Roblox Username</h2>
+      <form id="username-form">
+        <label for="roblox-username">Roblox Username:</label>
+        <input type="text" id="roblox-username" name="roblox-username" placeholder="Enter your Roblox username" required>
+        <button type="button" id="submit-username">Submit</button>
+      </form>
+    </section>
+
+    <!-- Trading Section -->
+    <section id="trading-section" style="display:none;">
+      <h2>Create a Trade Request</h2>
+      <form id="trade-form">
+        <label for="item-offer">Your Offer:</label>
+        <select id="item-offer" name="item-offer" required>
+          <option value="">Select a fruit</option>
+          <option value="dragon">Dragon</option>
+          <option value="phoenix">Phoenix</option>
+          <option value="quake">Quake</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+
+        <label for="item-request">Your Request:</label>
+        <select id="item-request" name="item-request" required>
+          <option value="">Select a fruit</option>
+          <option value="dragon">Dragon</option>
+          <option value="phoenix">Phoenix</option>
+          <option value="quake">Quake</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+
+        <button type="button" id="post-trade">Post Trade</button>
+      </form>
+    </section>
+
+    <!-- Public Trades Section -->
+    <section id="public-trades">
+      <h2>Public Trade Requests</h2>
+      <div id="trade-list">
+        <ul></ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="display:none;">
+      <h2>Contact Trader</h2>
+      <p id="contact-info"></p>
+      <form id="contact-form">
+        <label for="contact-message">Message:</label>
+        <textarea id="contact-message" placeholder="Enter your message here..." required></textarea>
+        <button type="button" id="send-message">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blox Fruits Trading Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
